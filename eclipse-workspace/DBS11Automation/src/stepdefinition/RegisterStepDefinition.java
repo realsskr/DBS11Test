@@ -8,7 +8,7 @@ import cucumber.api.PendingException;
 import cucumber.api.java.en.*;
 
 
-public class LoginStepDefinition {
+public class RegisterStepDefinition {
 
 public static WebDriver driver;
 		

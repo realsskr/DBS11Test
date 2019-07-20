@@ -3,7 +3,7 @@ package stepdefinition;
 import cucumber.api.PendingException;
 import cucumber.api.java.en.*;
 
-public class Admin {
+public class AdminStepDefinition {
 	
 	
 	@Given("^Admin lands on login page$")
