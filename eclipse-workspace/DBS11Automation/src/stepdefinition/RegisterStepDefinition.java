@@ -1,6 +1,7 @@
 package stepdefinition;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -30,8 +31,8 @@ public static WebDriver driver;
 
 		@When("^Agent clicks on register button$")
 		public void agent_clicks_on_register_button() throws Throwable {
-		    
-			driver.findElement(By.className("gNO89b")).click();
+			driver.findElement(By.xpath("//*[@title='Search']")).sendKeys(Keys.ENTER);
+//			driver.findElement(By.className("gNO89b")).click();
 		    
 		}
 
@@ -61,7 +62,7 @@ public static WebDriver driver;
 
 		@Then("^Customer is registered successfully$")
 		public void customer_is_registered_successfully() throws Throwable {
-			driver.close();
+			//driver.close();
 		    
 		}
 
